@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="6.*" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common.app\Common.flow.Construct.csproj" />
+    <ProjectReference Include="..\Common.flow.Allocate\Common.flow.Allocate.csproj" />
+    <ProjectReference Include="..\Common.flow.Initialize\Common.flow.Initialize.csproj" />
+  </ItemGroup>
+
+</Project>
